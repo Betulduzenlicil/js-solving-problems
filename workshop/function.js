@@ -12,7 +12,12 @@
 // let topla= islem(3,4)
 // console.log(topla) //Nan
 
-
+// const sum = function(a,b) {
+//   return a + b
+  
+// }
+// sum(2,3)
+// console.log(sum(2,3))
 
 //? ÖRNEK:1 cELCİUS DEĞERİNİ fAHRENHEIT DEĞERİNE DÖNÜŞTÜREN BİR FONKSİYON YAZINIZ. (Celcius * 9/5) + 32 = Fahrenheit
 
@@ -69,3 +74,55 @@
 //? ÖRNEK:4  Belirli bir string ifadenin içindeki sesli harfleri bulan fonksiyonu yazınız?(includes)
 
 // console.log(findVowels('hello world'))
+// let text = "Hello World";
+// let lowerText = text.toLowerCase();
+// let result = ""
+// let vowels = () => {
+//     if (lowerText.includes("a")==true) {
+//         result += "a ";
+//     }
+//     if (lowerText.includes("e")==true) {
+//         result += "e ";
+//     }
+//     if (lowerText.includes("ı")==true) {
+//         result += "ı ";
+//     }
+//     if (lowerText.includes("i")==true) {
+//         result += "i ";
+//     }
+//     if (lowerText.includes("o")==true) {
+//         result += "o ";
+//     }
+//     if (lowerText.includes("ö")==true) {
+//         result += "ö";
+//     }if (lowerText.includes("u")==true) {
+//         result += "u ";
+//     }
+//     if (lowerText.includes("ü")==true) {
+//         result += "ü ";
+//     }
+//     console.log(result);
+// }
+
+// vowels();
+
+
+//? ÖRNEK: 5 Belirli bir sayının tam bölenlerinin toplamını bulan fonksiyonu yazınız?
+
+const sayı = 24
+function sumOfDivisors (num) {
+  let sum = 0;
+  // console.log(num)
+  for (let i = 1; i <= num; i++) {
+    console.log(i)
+    if (num % i==0) {
+      sum +=i
+    }
+   
+    
+  }
+  return sum
+
+}
+console.log(sumOfDivisors(sayı)) 
+
