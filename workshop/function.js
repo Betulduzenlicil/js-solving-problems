@@ -109,20 +109,70 @@
 
 //? ÖRNEK: 5 Belirli bir sayının tam bölenlerinin toplamını bulan fonksiyonu yazınız?
 
-const sayı = 24
-function sumOfDivisors (num) {
-  let sum = 0;
-  // console.log(num)
-  for (let i = 1; i <= num; i++) {
-    console.log(i)
-    if (num % i==0) {
-      sum +=i
-    }
+// const sayı = 24
+// function sumOfDivisors (num) {
+//   let sum = 0;
+//   // console.log(num)
+//   for (let i = 1; i <= num; i++) {
+//     console.log(i)
+//     if (num % i==0) {
+//       sum +=i
+//     }
    
     
-  }
-  return sum
+//   }
+//   return sum
 
-}
-console.log(sumOfDivisors(sayı)) 
+// }
+// console.log(sumOfDivisors(sayı)) 
+
+//?2.yol
+// const sayi = 24 // 24 12 8 6 4 3 2 1
+
+// function sumOfDivisors(num) {
+//   let list = []
+//   for (let i = 1; i <= num; i++) {
+//     if (num % i == 0) {
+//       list.push(i)
+//       console.log(i)
+//     }
+//   }
+
+//   return list
+// }
+// console.log(sumOfDivisors(sayi))
+
+
+
+//? ÖRNEK:6 VERİLEN CÜMLEYİ TERSTEN YAZDIRINIZ
+
+//* 1. yol
+// let sentence = "People should not be afraid of their goverments; the goverment should be afraid of their people";
+// console.log(sentence.split(" ").reverse().join(" "));
+
+
+//* 2.yol
+// let sentence = "Coding. love I"
+
+// let newSent = sentence.split(" ")
+// let target = ""
+// for(let i = newSent.length-1; i> -1; i--){
+//   target+= " " + newSent[i]
+// }
+// console.log(target)
+
+//*3.yol
+// let sentence = prompt("Give a sentence to reverse").split(" ");
+// function reversedSentence (a) {
+//     let newStr = "";
+//     for (let i = a.length -1; i>=0; i--){
+//         newStr += " " + a[i];
+//     }
+//     return newStr
+// }
+// console.log(reversedSentence(sentence));
+
+
+//? ÖRNEK:7 VERİLEN CÜMLEYİ TAMAMEN TERSTEN YAZDIRINIZ
+let sentence = "Clarusway Rocks!"
 
