@@ -19,7 +19,7 @@
 // sum(2,3)
 // console.log(sum(2,3))
 
-//? ÖRNEK:1 cELCİUS DEĞERİNİ fAHRENHEIT DEĞERİNE DÖNÜŞTÜREN BİR FONKSİYON YAZINIZ. (Celcius * 9/5) + 32 = Fahrenheit
+//? ÖRNEK:1 CELCİUS DEĞERİNİ fAHRENHEIT DEĞERİNE DÖNÜŞTÜREN BİR FONKSİYON YAZINIZ. (Celcius * 9/5) + 32 = Fahrenheit
 
 
 // console.log(calFahrenheit(30))
@@ -50,7 +50,7 @@
 
 
 
-//? ÖRNEK:3 pALİNDROM OLUP OLMADIĞINI KONTROL ETME
+//? ÖRNEK:3 POLİNDROM OLUP OLMADIĞINI KONTROL ETME
 
 // const string = 'alila'
 
