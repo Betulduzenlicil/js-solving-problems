@@ -1,3 +1,5 @@
+
+
 //************************** */ DİZİLER /**********************
 
 
@@ -7,14 +9,21 @@
 // let ortalama = 0;
 
 // for (let i = 0; i < dizi.length; i++) {
-//     const element = dizi[i]
-//     ortalama = ortalama + element;
+//     ortalama+= dizi[i];
+    
 
 // }
 // console.log(ortalama)
 // console.log(ortalama/dizi.length);
 
+//?-2. yol ----------------------------------------------------------------
 
+// let dizi = [1,2,3,45,65];
+// let ortalama = 0;
+// dizi.forEach((d) => {ortalama+=d
+    
+// });
+// console.log(ortalama/dizi.length)
 
 
 //? soru 2: Bir prağraftaki sesliharflerin sayısını bulan fonksiyonu yazınız?
