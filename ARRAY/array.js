@@ -3,19 +3,21 @@
 
 //? soru 1: bir dizideki sayıların ortalamasını bulan fonksiyonu yazınız?​
 
-let dizi = [1,2,3,45,65];
-let ortalama = 0;
+// let dizi = [1,2,3,45,65];
+// let ortalama = 0;
 
-for (let i = 0; i < dizi.length; i++) {
-    ortalama += i;
- console.log(ortalama)   
-}
-console.log(ortalama)
-console.log(ortalama/dizi.length);
+// for (let i = 0; i < dizi.length; i++) {
+//     const element = dizi[i]
+//     ortalama = ortalama + element;
+
+// }
+// console.log(ortalama)
+// console.log(ortalama/dizi.length);
 
 
 
-// soru 2: Bir prağraftaki sesliharflerin sayısını bulan fonksiyonu yazınız?
+
+//? soru 2: Bir prağraftaki sesliharflerin sayısını bulan fonksiyonu yazınız?
 
 
 
