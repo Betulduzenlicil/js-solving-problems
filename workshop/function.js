@@ -176,3 +176,5 @@
 //? ÖRNEK:7 VERİLEN CÜMLEYİ TAMAMEN TERSTEN YAZDIRINIZ
 let sentence = "Clarusway Rocks!"
 
+sentence.join()
+

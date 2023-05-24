@@ -1,4 +1,4 @@
-/? ODEV1: Girilen bir sayinin Asal olup olmadigini yazdiran kodu
+//? ODEV1: Girilen bir sayinin Asal olup olmadigini yazdiran kodu
 //? for dongulerini kullanarak yaziniz.
 
 //* NOT:
