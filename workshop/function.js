@@ -174,7 +174,8 @@
 
 
 //? ÖRNEK:7 VERİLEN CÜMLEYİ TAMAMEN TERSTEN YAZDIRINIZ
-let sentence = "Clarusway Rocks!"
+// let sentence = "Clarusway Rocks!"
 
-sentence.join()
+// let reversedSentence = sentence.split("").reverse().join("")
+// console.log(reversedSentence)
 
