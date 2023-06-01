@@ -48,3 +48,157 @@
 
 
 // soru 7: Soru: Bir dizi içerisindeki sayıların karesini alarak yeni bir dizi oluşturun. Ardından, bu yeni dizideki çift sayıları filtreleyerek sadece çift sayıları içeren bir başka dizi oluşturun.
+
+
+//?ÖRNEK:
+const sayilar = [1, 50, 2, 41, 41, 84, 8, 35, 3];
+
+const isimler = ['sezer', 'ali', 'hasan', 'ayse'];
+
+const ogrenciler = [
+    {id : 12, isim : "sezer", yas : 30},
+    {id : 22, isim : "hasan", yas : 15},
+    {id : 32, isim : "fatma", yas : 55},
+    {id : 13, isim : "nuriye", yas : 19},
+    {id : 92, isim : "kemal", yas : 45},
+    {id : 15, isim : "mustafa", yas : 75},
+    {id : 44, isim : "ceren", yas : 30}
+];
+
+//?================= FONKSİYON ÇEŞİTLERİ=======================?//
+
+//! decleration
+ahmet() // herhangi bir değişkene atanmadığı için öncesinde çalıştırılabilir
+function ahmet () {
+    console.log("***");
+    
+}
+
+//! expression
+const mehmet = function () {
+    console.log("***");
+    
+}
+mehmet()// değişkene atandığı için tanımlama öncesinde çalışmaz
+
+//! arrow
+const fatma = () => {
+    console.log("***");
+}
+fatma()// değişkene atandığı için tanımlama öncesinde çalışmaz
+
+
+//? SHIFT
+// let result =sayilar.shift() //ilk elemanı sildi
+// console.log(result) //  sildiğini yazdırdı
+// console.log(sayilar) // 1 silindi [50,2,41,41,84,8,35,3] kaldı
+
+// let result2 = isimler.shift() //sezer silindi
+// console.log(result2) // sezeri yazdırdı
+// console.log(isimler)
+
+
+// let result3 = ogrenciler.shift() // ilk sıradaki objeyi sildi
+// console.log(result3) // sildiğini yazdırdı
+// console.log(ogrenciler) // kalan 5 elemanlı dizi oldu
+
+
+
+
+//?UNSHIFT
+
+// let result4= sayilar.unshift(100)// arryin ilk elemanını olarak 100 ekledi
+// console.log(result4); // arryain uzunluğunu gösterdi
+// console.log(sayilar); // ilk elemanı 100 olan array oluştu
+
+
+// let result5= isimler.unshift("Noah")
+// console.log(result5); // ilk eleman hoah oldu
+// console.log(isimler); // isimler araryinin uzunluğunu yazdırdı
+
+// let result6 = ogrenciler.unshift({id : 46, isim : "BETÜL", yas : 39})
+// console.log(result6);
+// console.log(ogrenciler)
+
+//?POP
+
+// let result7 = sayilar.pop()// son elemanı siler
+// console.log(result7) // sildiğini yazdırır 
+// console.log(sayilar)
+
+
+// let result8 = isimler.pop()// son elemanı siler
+// console.log(result8)// sildiğini yazdırır 
+// console.log(isimler)
+
+// let result9 = ogrenciler.pop()
+// console.log(result9)
+// console.log(ogrenciler)
+
+//? PUSH
+// let result10= sayilar.push(2222) // sona eleman ekler
+// console.log(result10) // dizinin eklendikten sonraki eleman sayısını gösterir
+// console.log(sayilar) // son hali gösterir
+
+
+// let result11 = isimler.push("Betül")
+// console.log(result11)
+// console.log(isimler)
+
+
+// let result12= ogrenciler.push({id : 118, isim : "AZRA", yas : 11})// sona ekledi
+// console.log(result12) // dizinin son eleman sayısını yazdırdı
+// console.log(ogrenciler) // ekendikten sonra yeni array yazıldı
+
+//?SLICE
+// let result13 = sayilar.slice(1,5) // 1.index ile 5. index kadar olan kısmını al 5. index dahil değil
+// console.log(result13) // istenen dilimi aldı [50,2,41,41]
+// console.log(sayilar) // orjinal array değişmeden yazıldı
+
+
+// let result14= isimler.slice(1,3)// 
+// console.log(result14) //["ali", "hasan"]
+// console.log(isimler)
+
+
+//?SPLICE
+// let result15 = sayilar.splice(2,4)//2. indexden başlayarak 4 eleman atar
+// console.log(result15) // sildiklerini yazdırır
+// console.log(sayilar) // yeni oluşan arrayi yazdırır
+
+
+
+// let result16 = isimler.splice(2)// 2.indexden başla sonuna kadar sil
+// console.log(result16)//sildiklerini yazdırır
+// console.log(isimler)
+
+
+// let result17 = ogrenciler.splice(2,5)
+// console.log(result17)//sildiklerini yazdırır
+// console.log(ogrenciler)
+
+
+
+// let result18= sayilar.splice(3,0,100,200) //3. indexe git birşey silme 100 ve 200 elemmanlarını ekle
+// console.log(result18) // birşey silmediği için boş arry yazdırır
+// console.log(sayilar) //[1, 50, 2, 100, 200, 41, 41, 84, 8, 35, 3]
+
+
+
+// let result19 = isimler.splice(2, "ali", "mehmet","aliye")
+// console.log(result19) // hasan ve ayseyi çıkardı
+// console.log(isimler) //['sezer', 'ali', 'mehmet', 'aliye', 'hasan', 'ayse'] yeni bu oluştu
+
+
+
+//?FIND
+// let result20= ogrenciler.find((item)=> console.log(item))//ogrenciler arryinin içindeki herbir itemi yani elemanı yazdırdı
+
+let result21 = ogrenciler.find((item) => item.id == 15)
+console.log(result21);
+console.log(ogrenciler);
+
+
+
+
+
