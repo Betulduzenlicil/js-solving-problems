@@ -48,9 +48,9 @@
 
 
 // soru 7: Soru: Bir dizi içerisindeki sayıların karesini alarak yeni bir dizi oluşturun. Ardından, bu yeni dizideki çift sayıları filtreleyerek sadece çift sayıları içeren bir başka dizi oluşturun.
+//*********************/ ARRAY METHODS /********************/
 
 
-//?ÖRNEK:
 const sayilar = [1, 50, 2, 41, 41, 84, 8, 35, 3];
 
 const isimler = ['sezer', 'ali', 'hasan', 'ayse'];
@@ -87,6 +87,8 @@ const fatma = () => {
 }
 fatma()// değişkene atandığı için tanımlama öncesinde çalışmaz
 
+
+//! ************** */METHODS*/*********** */
 
 //? SHIFT
 // let result =sayilar.shift() //ilk elemanı sildi
@@ -194,9 +196,101 @@ fatma()// değişkene atandığı için tanımlama öncesinde çalışmaz
 //?FIND
 // let result20= ogrenciler.find((item)=> console.log(item))//ogrenciler arryinin içindeki herbir itemi yani elemanı yazdırdı
 
-let result21 = ogrenciler.find((item) => item.id == 15)
-console.log(result21);
-console.log(ogrenciler);
+// let result21 = ogrenciler.find((item) => item.id == 15)
+// console.log(result21);
+// console.log(ogrenciler);
+
+
+//?fındIndex
+// let result21= ogrenciler.findIndex((kisi)=> kisi.id==92)
+// console.log(result21); // id si 92 olanın index numarasını buldu ve index numarasını yazdırdı
+// console.log(ogrenciler);
+
+
+//? Every
+
+// let result22 = sayilar.every((item)=>item <85)
+// console.log(result22);// her eleman 85 ten küçük ise true yzdırır
+
+// let result23 = sayilar.every((item)=>item < 84)
+// console.log(result23);// en az bir eleman 84 ten büyük veya eşit  ise false yzdırır
+
+//? some
+
+// let result23 = sayilar.some((item)=> item < 10)
+// console.log(result23); //true
+
+// let result24 = sayilar.some((item)=> item > 1000)
+// console.log(result24); //false
+
+
+//? INCLUDES 
+
+// let result25 = isimler. includes("ali")
+// console.log(result25); //true keysensitive olduğunu unutmayalım
+
+
+// let result26 = isimler. includes("Ali")
+// console.log(result26); //false keysensitive olduğunu unutmayalım
+
+
+//? forEach
+
+// let result27 = sayilar.forEach(function(i) {
+//     console.log(i*5);
+// })
+// console.log(sayilar);
+
+
+
+//? filter
+
+// let result28 = ogrenciler.filter((item)=>item.id % 2==1)
+// console.log(result28); //id si tek olanları listeleyip yazdırdı
+// console.log(ogrenciler);
+
+
+// let result29 = ogrenciler.filter((item)=>item.yas>=30)
+// console.log(result29);// yaşı 30 a eşit ve 30dan büyük olanları yazdırdı
+
+
+
+// let result30 = ogrenciler.find((item)=>item.yas>=30)
+// console.log(result30);// yaşı 30 a eşit ve 30dan büyük olan ilk kişiyi yazdırdı
+
+// let result30 = sayilar.filter((sayi)=> sayi>=20 && sayi<=30)
+// console.log(result30); // bos array döndü çunku sartı sağlayan depğer yok
+
+
+//?concat
+
+// let result31= sayilar.concat(isimler)
+// console.log(result31);//iki aray i birleştirip tek array yaptı
+
+// let result32 = isimler.concat(sayilar, "serhat")
+// console.log(result32);
+
+
+//?MAP
+
+// let result33 = sayilar.map((item)=> item*3)
+// console.log(result33); //herbir elemanı 3 ile çarpıp yeni array oluşturdu
+// console.log(sayilar);// orjinal array duruyor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
