@@ -56,13 +56,13 @@ const sayilar = [1, 50, 2, 41, 41, 84, 8, 35, 3];
 const isimler = ['sezer', 'ali', 'hasan', 'ayse'];
 
 const ogrenciler = [
-    {id : 12, isim : "sezer", yas : 30},
-    {id : 22, isim : "hasan", yas : 15},
-    {id : 32, isim : "fatma", yas : 55},
-    {id : 13, isim : "nuriye", yas : 19},
-    {id : 92, isim : "kemal", yas : 45},
-    {id : 15, isim : "mustafa", yas : 75},
-    {id : 44, isim : "ceren", yas : 30}
+    {id : 12, isim : "sezer", yas : 30, maas:2000},
+    {id : 22, isim : "hasan", yas : 15, maas:2000},
+    {id : 32, isim : "fatma", yas : 55, maas:2000},
+    {id : 13, isim : "nuriye", yas : 19, maas:3000},
+    {id : 92, isim : "kemal", yas : 45, maas:5000},
+    {id : 15, isim : "mustafa", yas : 75, maas:2500},
+    {id : 44, isim : "ceren", yas : 30, maas:4000}
 ];
 
 //?================= FONKSİYON ÇEŞİTLERİ=======================?//
@@ -278,12 +278,108 @@ fatma()// değişkene atandığı için tanımlama öncesinde çalışmaz
 // console.log(sayilar);// orjinal array duruyor
 
 
+//? Array From
+// let ad = "sezer"
+// let result34 = Array.from(ad)
+// console.log(result34)
+
+
+//? Array
+// let result35 = Array(5,2)
+// let result36 = Array(5)
+// let result37 = Array(sayilar,2)
+
+// console.log(result35)
+// console.log(result36)
+// console.log(result37) // sayılar 1. eleman 2 ikinci eleman
+
+
+//? Array of
+
+// let result38 = Array(5,2)
+// let result39 = Array.of(5) //tek elemanlı array 
+// let result40 = Array.of(5,2) //iki elemanlı array
+
+// console.log(result38)
+// console.log(result39)
+// console.log(result40)
+
+
+//? toString
+
+// let result41 = isimler.toString()
+// console.log(result41)
+// console.log(isimler)
 
 
 
+//? join
+
+
+// let result42 = isimler.join() //sezer,ali,hasan,ayse
+// let result43 = isimler.join("") //sezeralihasanayse
+// let result44 = isimler.join(" ") // sezer ali hasan ayse
+// let result45 = isimler.join("-") // sezer-ali-hasan-ayse
+// console.log(result42)
+// console.log(result43)
+// console.log(result44)
+// console.log(result45)
+// console.log(isimler)
 
 
 
+//? SORT
+// let result46=sayilar.sort()
+// console.log(result46) // ASCIYE GÖRE SIRALADI [1, 2, 3, 35, 41, 41, 50, 8, 84]
+// let result47= sayilar.sort((a,b)=>a-b)
+// let result48= sayilar.sort((a,b)=>b-a)
+// console.log(result47) // KÜÇÜKTEN BÜYÜĞE SIRALADI [1, 2, 3, 8, 35, 41, 41, 50, 84]
+// console.log(result48) // BÜYÜKTEN BÜYÜĞE SIRALADI [84, 50, 41, 41, 35, 8, 3, 2, 1]
+// console.log(sayilar) // esas dizi değişti
+
+
+//? REVERSE
+// let result49 = sayilar.reverse()
+// let result50 =isimler.reverse() // ters cevirdi
+// console.log(result49)
+// console.log(result50)
+// console.log(sayilar)// orjinal değişti
+// console.log(isimler)
+
+//? REDUCE
+
+// let result51= sayilar.reduce((x,y)=> (x + y),0)
+// let result52= sayilar.reduce((x,y)=> (x * y),1)
+// console.log(result51) // sayılar dizisindeki bütün elemanları topladı
+// console.log(result52) // sayılar dizisindeki bütün elemanları çarptı
+
+// ogrencilerin yasları toplamını bulunuz
+
+//* 1. yol
+// let sepet = 0
+
+// for (let i = 0; i < ogrenciler.length; i++) {
+//     sepet+= ogrenciler[i].yas;
+  
+    
+// }
+
+// console.log(sepet)
+
+//*2. yol
+// let yas = ogrenciler.map((ogrenci)=>ogrenci.yas)
+// console.log(yas) // yaşlardan oluşan arry oluştu [30, 15, 55, 19, 45, 75, 30]
+
+// let toplam = yas.reduce((a,b)=>a+b) // oluşan arrydeki yaşları topladı
+// console.log(toplam)
+// console.log(toplam/yas.length) // yaşların ortalamasını buldu
+
+
+//? id si çift yası 40tan büyük olan kişilerin maaşlarının toplamını bulunuz
+
+let istenenMaas= ogrenciler.filter((ogrenci)=>(ogrenci.id % 2===0) && ogrenci.yas>40).reduce((x,y)=>x+y.maas,0)
+
+console.log(istenenMaas)   
 
 
 
