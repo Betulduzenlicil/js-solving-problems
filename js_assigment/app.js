@@ -59,4 +59,35 @@ console.log("===============JS AASIGMENT=============");
 // console.log(`${num1} ${symbol} ${num2} = ${result}`);
 
 //?QUESTION-4)
-//!
+//!CONSOLDAN girilen günlere göre haftalık programınızı yazdırınız
+
+let etkinlik = "";
+let gun= prompt("Enter a number between monday, 1-7")
+
+    switch (gun) {
+        case "1":
+            etkinlik = "In class";
+            break;
+        case "2":
+            etkinlik = "In class";
+            break;
+        case "2":
+            etkinlik = "In class";
+            break;
+        case "4":
+            etkinlik = "In class";
+            break;
+        case "5":
+            etkinlik = "Team Work";
+            break;
+        case "6":
+            etkinlik = " In class + Teamwork";
+            break;
+        case "7":
+            etkinlik = "self study";
+            break;
+        default:
+            etkinlik = "yanlış gün girildi";
+    }
+
+    console.log(`${gun} günü: ${etkinlik}`);
