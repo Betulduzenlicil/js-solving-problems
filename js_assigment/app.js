@@ -133,3 +133,17 @@ console.log("===============JS AASIGMENT=============");
 
 // const num=+prompt("enter a number")
 // let result= num%2==0?console.log(`${num} çift sayı`):console.log(`${num} tek sayı`);
+
+//?QUESTION-9) 
+//! Girilen dereceyi fahrenhayta veya fahrenhaytı dereceye çeviren programı tasarlayınız
+
+// let sıcaklık= +prompt("lütfen  bir değer giriniz")
+// let dönüşüm= prompt("lütfen secim yapınız: (1 veya 2)")
+
+// if (dönüşüm==1) {
+//     console.log(`${sıcaklık} derece: ${(sıcaklık*9/5)+32} fahrenhayta eşittir`)
+// }else if(dönüşüm==2) {
+//     console.log(`${sıcaklık} fahrenhayt: ${(sıcaklık-32)*5/9} dereceye eşittir`)
+// }else{
+//     console.log("geçerli secim yapmadınız");
+// }
