@@ -61,33 +61,51 @@ console.log("===============JS AASIGMENT=============");
 //?QUESTION-4)
 //!CONSOLDAN girilen günlere göre haftalık programınızı yazdırınız
 
-let etkinlik = "";
-let gun= prompt("Enter a number between monday, 1-7")
+// let etkinlik = "";
+// let gun= prompt("Enter a number between monday, 1-7")
 
-    switch (gun) {
-        case "1":
-            etkinlik = "In class";
-            break;
-        case "2":
-            etkinlik = "In class";
-            break;
-        case "2":
-            etkinlik = "In class";
-            break;
-        case "4":
-            etkinlik = "In class";
-            break;
-        case "5":
-            etkinlik = "Team Work";
-            break;
-        case "6":
-            etkinlik = " In class + Teamwork";
-            break;
-        case "7":
-            etkinlik = "self study";
-            break;
-        default:
-            etkinlik = "yanlış gün girildi";
-    }
+//     switch (gun) {
+//         case "1":
+//             etkinlik = "In class";
+//             break;
+//         case "2":
+//             etkinlik = "In class";
+//             break;
+//         case "2":
+//             etkinlik = "In class";
+//             break;
+//         case "4":
+//             etkinlik = "In class";
+//             break;
+//         case "5":
+//             etkinlik = "Team Work";
+//             break;
+//         case "6":
+//             etkinlik = " In class + Teamwork";
+//             break;
+//         case "7":
+//             etkinlik = "self study";
+//             break;
+//         default:
+//             etkinlik = "yanlış gün girildi";
+//     }
 
-    console.log(`${gun} günü: ${etkinlik}`);
+//     console.log(`${gun} günü: ${etkinlik}`);
+
+   
+ //?QUESTION-5)
+ //! Consoldan gelir ve gider bilgilerini alıp gelir giderden en az asgari ücret kadar ise kredi alabilir yoksa alamaz (ternary)
+
+//  const minSalary= 11000
+//  let gelir= +prompt("Enter your gelir")
+//  let gider= +prompt("Enter your gider")
+
+//  let result= gelir-gider>=minSalary? console.log("kredi alabilir"):console.log("kredi alamaz");
+
+ //?QUESTION-6)
+ //! Consoldan kişinin maaşını alınız eğer maaş asgari ücretten az ise %50 değilse %10 zam yapan kodu(ternary)
+
+// const minSalary= 11000
+// let salary= +prompt("Enter your salary")
+// let zam= salary<minSalary? console.log(`yeni maaşınız: ${salary*1.5}`):console.log(`yeni maaşınız: ${salary*1.1} `)
+
