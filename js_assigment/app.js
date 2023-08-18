@@ -109,3 +109,27 @@ console.log("===============JS AASIGMENT=============");
 // let salary= +prompt("Enter your salary")
 // let zam= salary<minSalary? console.log(`yeni maaşınız: ${salary*1.5}`):console.log(`yeni maaşınız: ${salary*1.1} `)
 
+//?QUESTION-7) 
+//! 0 ile 100 arasında girilen not değerine karşılık gelen programı yazınız
+// const not= +prompt("Enter your note")
+
+// if (not<0 || not>100) {
+//     console.log("Girilen değer hatalı");  
+// }else{
+//     if(not>0&&not<=25){
+//         console.log("Başarı durumunuz: FF")
+// }   else if(not>25&&not<=45){
+//         console.log("Başarı durumunuz: DD");
+// }   else if(not>45&&not<=65){
+//         console.log("Başarı durumunuz: CC")
+// }   else if(not>65&&not<=75){
+//         console.log("Başarı durumunuz: BB");
+// }   else{
+//         console.log("Başarı durumunuz: AA")
+// }}
+
+//?QUESTION-8) 
+//!  girilen  sayı değerinin tek veya çift olduğunu belirleyen programı yazınız
+
+// const num=+prompt("enter a number")
+// let result= num%2==0?console.log(`${num} çift sayı`):console.log(`${num} tek sayı`);
