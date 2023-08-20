@@ -229,11 +229,30 @@ console.log("===============JS AASIGMENT=============");
 //?QUESTION-14)
 //! consola 1o kere merhaba yazdıran kodu while döngüsü ile yazınız
 
+// let num=1;
+// while (num<10) {
+//     console.log(num+ " Merhaba");
+//     num++;
+// }
 
 
+//?QUESTION-15)
+//! consola 0-100 arasında not isteyen ve girilen not farklı ise yeniden 0-100 arasında not girmeye yönlendiren kodu yazınız 
 
+// let note=+prompt("Enter your note")
 
+// while (true) {
+//     if (note<0 || note>100) {
+//         note=+prompt("Enter your note")
+//         continue;
+//     }else{
+//         console.log("notunuz: " +note)
+//     }
+//     break;
+// }
 
+//?QUESTION-16)
+//! consola 0-100 arasında not isteyen ve girilen not farklı ise yeniden 0-100 arasında not girmeye yönlendiren kodu yazınız 
 
 
 
