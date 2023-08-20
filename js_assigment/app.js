@@ -206,5 +206,34 @@ console.log("===============JS AASIGMENT=============");
 //?QUESTION-13)
 //! girilen sayının asal olup olmadığını belirleyen kodu for döngüsü ile yazınız
 
+// const sayı = +prompt("enter a number")
+// let asalMı= true;
+
+// if (sayı <= 1) {
+//     asalMı = false;
+// } else {
+//     for (let i = 2; i < sayı; i++) {
+//         if (sayı % i === 0) {
+//             asalMı = false;
+//             break;
+//         }
+//     }
+// }
+
+// if (asalMı) {
+//     console.log(sayı + " asal bir sayıdır.");
+// } else {
+//     console.log(sayı + " asal bir sayı değildir.");
+// }
+
+//?QUESTION-14)
+//! consola 1o kere merhaba yazdıran kodu while döngüsü ile yazınız
+
+
+
+
+
+
+
 
 
