@@ -147,3 +147,64 @@ console.log("===============JS AASIGMENT=============");
 // }else{
 //     console.log("geçerli secim yapmadınız");
 // }
+
+
+//?QUESTION-10)
+
+//! sayı tahmin oyunu
+// let sayı= Math.round(Math.random()*100)
+// let hak = 5; // Kullanıcının kalan tahmin hakkı
+
+// console.log("0 ile 100 arasında bilgisayarın tuttuğu sayıyı bulmak için 5 tahmin hakkınız var.");
+
+// while (hak > 0) {
+//     var user = +(prompt("Tahmininizi girin:"));
+
+//     if (isNaN(user) || user < 0 || user> 100) {
+//         console.log("Geçerli bir sayı giriniz (0-100 arası)!");
+//         continue;
+//     }
+
+//     if (user === sayı) {
+//         console.log("Tebrikler! Doğru tahmin ettiniz.");
+//         break;
+//     } else {
+//         hak--;
+
+//         if (hak === 0) {
+//             console.log("Hakkınız bitti. Doğru tahmin edemediniz. Tutulan sayı: " + sayı);
+//             break;
+//         } else if (user < sayı) {
+//             console.log("Daha büyük bir sayı girin. Kalan hak: " + hak);
+//         } else {
+//             console.log("Daha küçük bir sayı girin. Kalan hak: " + hak);
+//         }
+//     }
+// }
+
+//?QUESTION-11)
+//! 1 den n ye kadar olan sayıların toplamını yazdıran kodu yazınız
+
+// let sayı= +prompt("Enter a number")
+// let sum=0;
+
+// for (let i = 0; i < sayı; i++) {
+//     sum+=i;
+    
+// }
+// console.log(`1 den ${sayı} e  kadar olan sayıların toplamı:  ${sum}`);
+
+//?QUESTION-12)
+//! 1 den 100 e kadar 10 adet rastgele sayı üreten kodu yazınız
+
+// for (let i = 0; i < 10; i++) {
+//     let sayı=Math.round(Math.random()*100)
+   
+//     console.log(`${i} nci sayı ${sayı}`);
+// }
+
+//?QUESTION-13)
+//! girilen sayının asal olup olmadığını belirleyen kodu for döngüsü ile yazınız
+
+
+
