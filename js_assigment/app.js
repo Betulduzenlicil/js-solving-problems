@@ -252,7 +252,39 @@ console.log("===============JS AASIGMENT=============");
 // }
 
 //?QUESTION-16)
-//! consola 0-100 arasında not isteyen ve girilen not farklı ise yeniden 0-100 arasında not girmeye yönlendiren kodu yazınız 
+//! consoldan Q veya q karakteri girilene kadar not girişi yapan ve bu karakterlerden birisi girildiğinde o ana kadar girilen tüm notların ortalamasını hesaplayan kodu do-while döngüsü ile yazınız. 
+
+
+let toplamNot = 0;
+let notSayısı = 0;
+let input;
+
+do {
+    input = prompt("Bir not girin (Çıkmak için 'Q' veya 'q' girin):");
+
+    if (input !== 'Q' && input !== 'q') {
+        const grade =+(input);
+        if (!isNaN(grade) && grade >= 0 && grade <= 100) {
+            toplamNot += grade;
+            notSayısı++;
+        } else {
+            console.log("Geçersiz not! Lütfen 0 ile 100 arasında bir not girin.");
+        }
+    }
+} while (input !== 'Q' && input !== 'q');
+
+if (notSayısı > 0) {
+    const score = toplamNot / notSayısı;
+    console.log(`Girilen notların ortalaması: ${score.toFixed(2)}`);
+} else {
+    console.log("Herhangi bir not girilmedi.");
+}
 
 
 
+
+
+
+
+
+//*==================== TEKRAR ET ======================*//
