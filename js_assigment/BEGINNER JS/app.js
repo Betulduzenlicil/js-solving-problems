@@ -18,7 +18,9 @@ console.log("Merhaba");
 //! prompt
 
 // prompt("enter your age")
+//PROMPT İLE ALINAN BÜTÜN DEĞERLER STRİNGDİR
 
+// let number= +prompt("enter a number")
 
 //? değişken tanımlama yolları
 
@@ -68,7 +70,7 @@ console.log("Merhaba");
 //  *ekrana kirmizi renkte bir hata mesaji verir
 // console.error("Eyvah hata olustu..");
 
-//********CONST ÖRNEKLERİ */
+//********CONST ÖRNEKLERİ *********/
 // const pi = 3.14;
 
 // console.log(pi)
@@ -127,11 +129,6 @@ const isClose = true;
 // console.log(a);
 
 
-
-
-
-
-
 // let yaş=30;
 
 // if(yaş==30){
@@ -146,4 +143,343 @@ const isClose = true;
 
 
 //*===============================OPERATORS IN JAVASCRIPT===========================*
+
+//!ARİTMETİK OPERATORS
+
+//? TOPLAMA
+// const num1 = 10;
+
+// const num2 = 69;
+
+// const toplam = num1 + num2;
+// console.log(toplam);
+
+// num1 ve num2 operand , + operator olark adlandırılıyor.
+
+// const msg1 = "Hello ";
+// const msg2 = "World!";
+
+// const mesaj = msg1 + msg2;
+
+// console.log(mesaj) 
+//? iki string ifadenin toplamı demek o iki stringi yan yana birleştirmek demektir
+
+
+// *örnekler
+// let x = 1 + 1;
+// console.log(x);
+// let y = "1" + 1+5+8+9;
+
+// console.log(y)  
+//? javascript bir tane string görünce bundan sonraki değerler hangi tipte olursa olsun bunları yan yana birleştirir
+
+// let z = 1 + 1 + "1"+8+9;
+// console.log(z);
+
+//? javascript number veya float değerleri ta ki bir string görene kadar toplar stringi gördüğü andan itibaren artar yan yana birleştirir.
+
+// let t = 1 + 1 + "1" + 1 + 2;
+// console.log(t)
+
+// let v = 1 + "a"+2 +"3";
+// console.log(v);
+
+// let u = "a" + "b";
+// console.log(u)
+
+
+
+//? ÇIKARMA
+// const x = 55;
+// const y = 44;
+// const cıkar= x-y
+// console.log(cıkar);
+
+
+
+// const x = 10;
+// const y = "1";
+// const cıkar= x-y;  
+//? bir number değeri string içinde yazılmış olsa bile javascript bunu number olarak algılayıp çıkarma işlemi yapıyor
+// console.log(cıkar)
+
+// const a = "b";
+// const c= 10
+// const d= c-a;
+// console.log(d);
+
+//? bir string değer numara değilse buna javascript not a number diyor ve çıkarma işleminin sonucunu Nan olarak veriyor
+// const z = x - y;
+// const v = y - a;
+// console.log(v)
+//? değeri number olmayan iki stringi çıkarma yaparken de Not a Number sonucunu vermekte
+
+
+//*Örnekler
+// let x = 10 - 5;   //5
+// let y = 10 - "5"; //5
+// let z = "10" - 5; //5
+// let t = "10" - "5"; //5
+// let u = 10 - "a";  //Nan
+// let v = "a" - "b"; //Nan
+
+
+//?ÇARPMA
+// let carp1 = 7;
+// let carp2 = 9;
+// let carpma = carp1 * carp2;
+// console.log(carpma);
+// let x = "a" * "b";
+// console.log(x)  //? iki string ifadenin çarpımının sonucu Nan  olarak karşımıza çıkar
+// let y = "a" * 3;
+// console.log(y); //? bir number bir string ifadenin çarpımının sonucu da Nan dır
+
+
+
+//?ÖNEMLİ
+Number(null)                   // 0
+Number(undefined)              // NaN
+Number(true)                   // 1
+Number(false)                  // 0
+Number(" 12 ")                 // 12
+Number("-12.34")               // -12.34
+Number("\n")                   // 0
+Number(" 12s ")                // NaN
+Number(123)                    // 123
+
+
+//?BÖLME
+// const böl1 = 85;
+// const böl2 = 9;
+// const a= böl1/böl2
+// console.log(a)
+
+// const x = böl1 / "9"; //? kullanıcının number tipinde değer girdiğini varsayarak normal bölme işlemi yapıyor
+// console.log(x);
+
+// const b = böl1 / "dokuz";
+// console.log(b) //? string ifade sayı olmadığı için sonucu Not a number olarak veriyor
+// const c= böl2 / 0;  // ınfinity
+// console.log(c);
+// console.log(0/0) //Nan
+// console.log(0/böl1);  //0
+
+
+
+//? MOD ALMA (%)
+
+// const mod1 = 57;
+// const mod2 = 9;
+
+// console.log(mod1%mod2)
+
+
+// const sayı = 537
+
+// const birlerbasamağı= sayı%10
+// const onlarbasamağı=((sayı%100)-birlerbasamağı)/10
+// const onlarbasamağı= Math.floor((sayı%100)/10)
+
+// const yüzlerbasamağı= Math.floor(sayı/100)
+// console.log(birlerbasamağı)
+// console.log(onlarbasamağı)
+
+// console.log(`${sayı}  nin birler basamağı: ${birlerbasamağı}`);
+// console.log(`${sayı}  nin onlar basamağı: ${onlarbasamağı}`);
+// console.log(`${sayı}  nin yüzler basamağı: ${yüzlerbasamağı}`);
+
+
+
+
+// const name= "Betül"
+// let yas =35
+
+// console.log(`benim adım ${name}`)
+// console.log(`${yas} yaşında işe başladım`);
+
+
+//* bazı hazır fonksiyonlar
+
+//!     Math.ceil();  (sayıyıh her zaman bir üstteki tamsayı değerine yuvarlar)
+
+// let sayı= Math.ceil(5.3)
+// console.log(sayı)
+
+
+
+//!     Math.floor();    ( sayıyı her zaman bir alttaki tamsayı değerine yuvarlar)
+// let sayı2= Math.floor(6.7)
+// console.log(sayı2);
+
+
+
+
+//!               Math.trunc(); (sayının tam kısmını alır)
+
+// let sayı3= Math.trunc(5.00009)
+// console.log(sayı3)
+
+
+
+//!           Math.round();  (ondalıklı sayıyı en yakın tamsayıya yuvarlar)
+
+// let sayı4= 5.8;
+// let sayı5= 8.3;
+// let sayı6= 6.5
+
+// console.log(Math.round(sayı4));
+// console.log(Math.round(sayı5));
+// console.log(Math.round(sayı6));
+
+
+
+//!           Math.random();   (0 ile 1 arasında rastgele sayı üretir)
+
+// let sayı7= (Math.random()*100)   //!   (0 ile 100 arasında sayı üretir)
+// let sayı8= Math.random()  //! 0 ile 1 rasında sayı üretir
+// let sayı9= Math.random()*10  //! 0 ile 10 rasında sayı üretir
+// console.log(sayı9)
+
+
+// let benimSayım=  Math.random()*100
+// console.log(benimSayım.toFixed(5));
+
+
+
+// console.log(Math.round(-3.80))
+
+
+
+
+//?                  ++ ve -- operatörleri 1 artırır veya 1 eksiltir
+
+
+let number= 6;
+// let newNumber= number
+// console.log(number);
+// console.log(newNumber);
+
+
+
+// number= number + 1
+// console.log(number)
+
+// newNumber= ++number;
+// console.log(newNumber);
+
+
+// newNumber= number++
+// console.log(newNumber)
+
+
+
+// let newNumber= ++number;
+// console.log(newNumber);
+// console.log(--newNumber);
+// console.log(newNumber--)
+
+
+// let ssa= Math.random()*10;
+// console.log(ssa);
+
+// console.log(Math.floor(ssa))
+
+
+
+
+//!                                                 Atama Operatörleri
+
+//! += Ekle ve Sonucu Ata
+let num1 = 14;
+let num2 = 17;
+
+
+num2= num2 + num1 ;
+//? yukarıdaki gibi uzun uzun yazmak yerine += operatörünü kullanarak işlemimi kısaltmış oldum. Aynı şekilde diğer operatörler içinde geçerli.
+// nums2 += nums1;
+// num2 += num1;
+
+// console.log(num2)
+
+//! -= Çıkar ve Sonucu Ata
+
+// let num4 = 6;
+// let num5 = 3;
+
+
+// num4 = num4 - num5;
+
+// num5 -= num4;
+
+// console.log(num5);
+
+let num14 = 6;
+let num15 = 3;
+
+// //! -= Çıkar ve Sonucu Ata
+// num14 = num14 - num15;
+// num14 -= num15;
+// console.log(num14); // 3
+
+
+
+// //! *= Çarp ve Sonucu Ata
+// num14 = num14 * num15;
+// num14 *= num15;
+// console.log(num14); 
+
+
+
+
+
+// //! /= Böl ve Sonucu Ata
+// num14 = num14 / num15;
+// num14 /= num15;
+// console.log(num14);
+
+
+
+
+ //! /= Bölümden Kalanı Bul ve Ata
+// num14 = num14 % num15;
+// num14 %= num15;
+// console.log(num14);
+
+
+
+//?                         Karşılaştırma Operatörleri
+
+
+const num16 = 27;
+
+
+// console.log(num16 == 27); //true
+// console.log(27 == "27"); // true
+
+
+const num17=27
+
+//* eğer iki değişkeni hem değer hem de tip olarak karşılaştırmak için === operatörünü kullanırız iki eşilik varsa bu değişkenlerin sadece değer olarak eşit olup olmdıklarını sorgular
+
+// console.log(num16===27)
+// console.log(num16==="27")
+
+// let user1= prompt("enter a number user1")  //*string tipinde
+// let user2= +prompt("enter a number user2")   //* string ifadeyi number a cevirir
+// let user2= +prompt("enter a number")   //* string ifadeyi number a cevirir
+// 12
+
+
+// console.log(user1===user2);
+// console.log(user1 == user2);
+
+
+
+// //? !=, !==
+
+// console.log(15 != "15"); // false. çünkü değerleri eşit
+// console.log(15 !== "15"); // true. çünkü typeları eşit değil
+
+
+
 
