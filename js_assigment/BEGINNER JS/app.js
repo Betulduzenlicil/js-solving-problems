@@ -450,14 +450,14 @@ let num15 = 3;
 //?                         Karşılaştırma Operatörleri
 
 
-const num16 = 27;
+// const num16 = 27;
 
 
 // console.log(num16 == 27); //true
 // console.log(27 == "27"); // true
 
 
-const num17=27
+// const num17=27
 
 //* eğer iki değişkeni hem değer hem de tip olarak karşılaştırmak için === operatörünü kullanırız iki eşilik varsa bu değişkenlerin sadece değer olarak eşit olup olmdıklarını sorgular
 
@@ -614,7 +614,7 @@ const num17=27
 // console.log(myNumber2) //? NaN
 // console.log(typeof myNumber2) //? number
 
-const dolar = "1000.3"
+// const dolar = "1000.3"
 // const tl = "2000.2"
 
 // const totalMoney = Number(dolar) + +tl
@@ -665,3 +665,15 @@ https://medium.com/@kplnhsyn.49/list/reading-list
 
 
 
+const sayi= +prompt("enter a number")
+let sonuc = "";
+
+if (sayi > 0) {
+  sonuc = "Positif";
+} 
+else if (sayi < 0) {
+  sonuc = "Negatif";
+} 
+else {
+  sonuc = `sayiniz ${sayi} dir`;
+}
