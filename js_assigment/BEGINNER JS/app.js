@@ -482,4 +482,186 @@ const num17=27
 
 
 
+//? >, < (Büyük mü?, Küçük mü?)
+
+// console.log(15 >= 15); //true
+// console.log(15 <= 15); // true
+// console.log(15 >= 16); // false
+// console.log(15 >== "15");// error verir. Çünkü bu şekilde karşılaştırma operatörü bulunmuyor.
+// console.log(15 >= "15"); // true
+// console.log("14" <= "15"); // true
+
+
+
+
+//! Mantıksal Operatörler
+
+//* &&           and
+
+
+//  console.log(" " && true && 2 && 6 && "ali" && "veli" && true);
+
+//  console.log(true && ""); 
+//  console.log(5 && "Merhaba"); // "Merhaba"
+
+
+
+
+// //*                  || or
+
+//  console.log(true || false); 
+//  console.log("" || 0);
+
+ //?        || operatoru true ve truthy değer arar. ilk gördüğü true veya truthy döner.Bulamazsa son gördüğü false veya falsy değeri döner.
+
+
+
+
+ //*                    ! not
+
+// console.log(!true); // false
+// console.log(!false); // true
+// console.log(!0); // true
+// console.log(!5); // false
+
+
+
+//? falsy
+// console.log(Boolean(false)); // false
+// console.log(Boolean(0)); // false
+// console.log(Boolean(-0)); // false
+// console.log(Boolean(0n)); // false
+// console.log(Boolean("")); // false (boş string)
+// console.log(Boolean(null)); // false
+// console.log(Boolean(undefined)); // false
+// console.log(Boolean(NaN)); // false
+
+
+
+
+
+//?             truthy
+// console.log(Boolean(true)); // true
+// console.log(Boolean({})); // true (boş object)
+// console.log(Boolean([])); // true (boş array)
+// console.log(Boolean(5)); // true
+// console.log(Boolean("0")); // true (dolu string)
+// console.log(Boolean("false")); // true (dolu string)
+// console.log(Boolean(Infinity)); // true
+// console.log(Boolean(new Date())); // true (tarih methodları)
+// console.log(Boolean(function () {})); // true (boş fonksiyon)
+// console.log(
+// Boolean(function () {
+//     console.log("Hello World!");
+//   })
+// ); // true (boş fonksiyon)}
+
+
+
+//! İşlem Önceliği sıralaması
+// 1. ! (not)
+// 2. && (and)
+// 3. || (or)
+
+
+
+//! Kullanıcının vize ve final ortalaması canEgrisine eşit veya büyükse Kullanıcıya "Geçtiniz" mesajı dönünüz. Eşit veya büyük değilse "Kaldınız" şeklinde mesaj dönününüz.
+//! Not: prompt tan gelen veriler string olarak geliyor o nedenle dönüştürme işlemi yapıyoruz.
+//! Vizenin 530 u finalin % 70 ini alarak hesaplama yapalım
+
+// const canEgrisi= 65
+// const vize= Number(prompt("vize notunuzu giriniz"))
+// const final= +prompt("final notunuzu giriniz")
+
+// const ortalama= vize*0.3 +final*0.7
+
+
+// console.log((ortalama>=canEgrisi) && "Gectiniz" || "Kaldınız")
+
+
+// console.log(`ortalamanız:  ${ortalama}`);
+
+
+
+
+// * =============================================
+// *            TIP DONUSUMLERI
+// * =============================================
+
+
+
+// let sayi = prompt("Bir sayi girinz:") //? 100
+// console.log(typeof sayi)
+// let sayi2 = 10
+// sayi = sayi + sayi2 //? concatination
+
+
+// console.log(sayi++)
+
+
+
+
+// console.log(Number("123")) //? 123
+// console.log(Number("12.3")) //? 12.3
+// console.log(Number("0")) //? 0
+// console.log(Number(" ")) //? 0   true
+// console.log(Number("")) //? 0
+// console.log(Number(null)) //? 0
+// console.log(Number(undefined)) //? NaN
+
+// const myNumber = "threezeroone" //? string
+// let myNumber2 = Number(myNumber)
+// console.log(myNumber2) //? NaN
+// console.log(typeof myNumber2) //? number
+
+const dolar = "1000.3"
+// const tl = "2000.2"
+
+// const totalMoney = Number(dolar) + +tl
+// console.log(totalMoney)
+
+
+
+//* ALternatif olarak parseInt() ve parseFloat() da kullanilabilir.
+// const dolarInt = parseInt(dolar) //? tamsayiya cevirir
+// console.log(dolarInt)
+// const tlFloat = parseFloat(tl) //? virgüllü sayiya çevirir
+// console.log(tlFloat)
+
+// console.log(parseFloat(null)) //? NaN
+// console.log(parseFloat("")) //? NaN
+// console.log(parseFloat(undefined)) //? NaN
+
+
+
+//*nedenlerini anlamak icin bu linkteki yaziya göz atabilirsiniz  
+https://medium.com/@kplnhsyn.49/list/reading-list
+
+// true + false             // 1
+// 12 / "6"                 // 2
+// console.log("number" + 15 + 3 );       // 
+// 15 + 3 + "number"        // 
+// console.log( 15 + 3 + "number" )
+// [1] > null               // true
+// "foo" + + "bar"          // 'fooNaN'
+// console.log('15' == 15);         // false
+// false == 'false'         // false
+// null == ''      
+
+
+// console.log("a">"A")
+
+
+//! KULLANICIDAN İKİ SAYI ALINIZ BU SAYILARIN BİRBİRİ İLE ÇARPIMI 10 DAN BÜYÜK İSE SAYIM İKİ BASAMAKLI DEĞİL İSE SAYIM BİR BASAMAKLI DİYE BİR ÇIKTI VERİNİZ
+
+
+// let numaram= Number(prompt("enter your number"));
+// let numara2= +prompt("enter your number");
+// let sonuc= numara1*numara2;
+// let carpım= 10
+
+
+// console.log((sonuc>=carpım)&& "çıft haneli"  || "tek haneli");
+
+
 
