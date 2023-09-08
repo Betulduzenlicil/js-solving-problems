@@ -657,7 +657,7 @@ https://medium.com/@kplnhsyn.49/list/reading-list
 
 // let numaram= Number(prompt("enter your number"));
 // let numara2= +prompt("enter your number");
-// let sonuc= numara1*numara2;
+// let sonuc= numaram*numara2;
 // let carpım= 10
 
 
@@ -665,15 +665,15 @@ https://medium.com/@kplnhsyn.49/list/reading-list
 
 
 
-const sayi= +prompt("enter a number")
-let sonuc = "";
+// const sayi= +prompt("enter a number")
+// let sonuc = "";
 
-if (sayi > 0) {
-  sonuc = "Positif";
-} 
-else if (sayi < 0) {
-  sonuc = "Negatif";
-} 
-else {
-  sonuc = `sayiniz ${sayi} dir`;
-}
+// if (sayi > 0) {
+//   sonuc = "Positif";
+// } 
+// else if (sayi < 0) {
+//   sonuc = "Negatif";
+// } 
+// else {
+//   sonuc = `sayiniz ${sayi} dir`;
+// }
