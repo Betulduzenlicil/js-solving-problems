@@ -295,7 +295,13 @@
 
 
 // ? Kullanıcıdan 0-100 arasında bir not isteyen ve girilen not 0-100'den farklı ise kullanıcıyı uyararak yeniden 0-100 arasında not girmeye zorlayan kodu While döngüsü ile yazınız.
-
+// let num=+prompt("Enter your number: ")
+// while (num<0 || num>100) {
+//      num=+prompt("Enter your number: ")
+ 
+        
+// }
+// console.log("Girilen numara: ", num)
 
 //? 4 işlem yapan hesap makinesini fonksiyon kullanarak yapalım
 // let hesapMakinesi=(num1,num2, symbol)=>{
@@ -365,6 +371,40 @@
 // console.log(yasHesapla())
 
 
-let ucgenAlan=function(a,b) {
+//? üçgenin alanını hesaplayan fonksiyonu yazınız
+// let taban=+prompt("taban uzunluğunu giriniz: ")
+// let yükseklik=+prompt("yükseklik değerini giriniz: ")
+// let ucgenAlan=function(a,b) {
     
-}
+//     let alan= taban*yükseklik/2
+//     return alan
+// }
+// console.log(`Taban uzunluğu ${taban} br, yüksekliği ${yükseklik} br, olan üçgenin alanı: ${ucgenAlan()} br`)
+
+
+//? kareAl, küpAl ve üsAl diye üç farklı fonksiyonu arrow function ile tanımlayınız
+
+// let kareAl=num=>num**2
+
+// console.log(kareAl(8));
+
+// let küpAl=num=>num*num*num
+// console.log(küpAl(3))
+
+// let üsAl=num=>num**num
+// console.log(üsAl(4));
+
+
+//? girilen bir yıl değerinin artık yıl olup olmadığını bulan fonksiyonu yazınız
+// let yıl=+prompt("yıl degeri giriniz: ")
+// let artıkYıl=function(yıl){
+//      let result
+//     if ((yıl%4==0)&&(yıl%100!=0 || yıl%400==0)) {   
+//         result="artık"  
+//     }
+//     else{
+//         result="artık değil"
+//     }
+//     return result
+// }
+// console.log(artıkYıl(yıl))
