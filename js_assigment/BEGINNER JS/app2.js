@@ -338,5 +338,18 @@
 
 //? ikinci yol
 
-let oddEven=(num)=>num%2==0 ? "EVEN":"ODD"
-console.log(oddEven(7));
+// let oddEven=(num)=>num%2==0 ? "EVEN":"ODD"
+// console.log(oddEven(7));
+
+//? Bir dairenin alanını hesaplayan fonksiyonu arrow function ile yazınız yarıçapı kullanıcıdan alınız
+
+// let yarıcap=+prompt("yarıçap değeri yazınız: ")
+// let pi= 3.14
+// let area= pi*(yarıcap**2)
+
+// let hesapla=(a,b)=>area
+
+// console.log(hesapla(yarıcap,pi));
+
+
+//? Doğum tarihini parametre olarak alan ve kişinin yaşını hesaplayan fonksiyonu yazınız
