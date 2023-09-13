@@ -353,3 +353,18 @@
 
 
 //? Doğum tarihini parametre olarak alan ve kişinin yaşını hesaplayan fonksiyonu yazınız
+
+
+
+// let yasHesapla=function() {
+//     let dogumTarihi=+prompt("doğum tarihinizi yıl olarak giriniz: ")
+//     let age=new Date().getFullYear()-dogumTarihi
+//     return age
+    
+// }
+// console.log(yasHesapla())
+
+
+let ucgenAlan=function(a,b) {
+    
+}
