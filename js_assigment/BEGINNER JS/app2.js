@@ -147,17 +147,17 @@
 //* 00000
 //* 000000
 
-let rows=6
+// let rows=6
 
-for (let i = 1; i<=rows; i ++) {
+// for (let i = 1; i<=rows; i ++) {
     
-    let row="";
-    for (let j = 1; j <= i; j ++) {
+//     let row="";
+//     for (let j = 1; j <= i; j ++) {
         
-        row+="0";
-    }
-    console.log(row);
-}
+//         row+="0";
+//     }
+//     console.log(row);
+// }
 
 
 
@@ -260,38 +260,83 @@ for (let i = 1; i<=rows; i ++) {
 // console.log("there are", count, "var");
 // ? Çarpım tablosu oluşturma
 
-for (let i = 1; i<=10; i ++ ) {
-    console.log(`${i}`, "lar");
+// for (let i = 1; i<=10; i ++ ) {
+//     console.log(`${i}`, "lar");
     
-    for (let j = 1; j<=10; j ++) {
-        console.log(`${i}x${j}=${i*j}`);
+//     for (let j = 1; j<=10; j ++) {
+//         console.log(`${i}x${j}=${i*j}`);
         
-    }
-    // console.log("====");
+//     }
+   // console.log("====");
     
-}
+// }
 
 // ? Arsmstrong sayısı
 
 //* 153 => 1**3 + 5**3 + 3**3 = 153 - bu armstrong sayısıdır
 
-let number=153
+// let number=153
 
-let toplam=0
+// let toplam=0
 
-let birlerBas= Math.floor(number%10)
-console.log(birlerBas);
+// let birlerBas= Math.floor(number%10)
+// console.log(birlerBas);
 
-let onlarBas= Math.trunc((number%100)/10)
-console.log(onlarBas);
+// let onlarBas= Math.trunc((number%100)/10)
+// console.log(onlarBas);
 
-yüzlerBas=Math.floor((number%1000)/100)
-console.log(yüzlerBas);
+// yüzlerBas=Math.floor((number%1000)/100)
+// console.log(yüzlerBas);
 
-let armstrong= (birlerBas**3 +onlarBas**3+ yüzlerBas**3)==number ? console.log("Bu sayı armstrong sayıdır"): console.log("Bu sayı armstrong sayı değildir");
+// let armstrong= (birlerBas**3 +onlarBas**3+ yüzlerBas**3)==number ? console.log("Bu sayı armstrong sayıdır"): console.log("Bu sayı armstrong sayı değildir");
 
 
 
 
 
 // ? Kullanıcıdan 0-100 arasında bir not isteyen ve girilen not 0-100'den farklı ise kullanıcıyı uyararak yeniden 0-100 arasında not girmeye zorlayan kodu While döngüsü ile yazınız.
+
+
+//? 4 işlem yapan hesap makinesini fonksiyon kullanarak yapalım
+// let hesapMakinesi=(num1,num2, symbol)=>{
+//     if (symbol=="+") {
+//       result= num1+num2  
+//     }
+//     else if (symbol=="-") {
+//         result=num1-num2
+//     }
+//     else if (symbol=="*") {
+//         result=num1*num2
+        
+//     }else if (symbol=="/") {
+//         result=num1/num2
+//     }
+//     return result
+// }
+
+// console.log(hesapMakinesi(4,5,"-"));
+
+
+//? Bir sayının tek mi çift mi olduğunu belirleyen fonksiyonu yazalım
+
+// let oddEven=(num)=>{
+//     if (num%2==0) {
+//         result="EVEN"
+        
+//     }else{
+//         result="ODD"
+
+//     }
+//     return result
+       
+
+// }
+
+// console.log(oddEven(5));
+// console.log(oddEven(8));
+
+
+//? ikinci yol
+
+let oddEven=(num)=>num%2==0 ? "EVEN":"ODD"
+console.log(oddEven(7));
