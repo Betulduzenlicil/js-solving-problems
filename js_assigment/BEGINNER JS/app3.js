@@ -97,7 +97,7 @@ let tarih=new Date().getFullYear()
 // let year= +prompt("Enter a year")
 
 // let bul =(year)=>{
-//     if ((year%4==0)&&(year%100!=0 ||year%400==0)) {
+//     if ((year%4==0)&&(year%100!=0 || year%400==0)) {
 //         year="artık yıldır"
 //     }else{
 //         year="artık yıl değil"
