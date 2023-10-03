@@ -37,35 +37,35 @@
 
 let tekrarOyna;
 
-do {
-  console.log("HAYDI BASLAYALIM");
-  let hak = 5;
-  // const cevap = Math.floor(Math.random() * 100 + 1);
-  const cevap = 44;
+// do {
+//   console.log("HAYDI BASLAYALIM");
+//   let hak = 5;
+//   // const cevap = Math.floor(Math.random() * 100 + 1);
+//   const cevap = 44;
 
-  do {
-    const tahmin = Number(prompt("Lütfen 0-100 arasinda bir sayi gir:"));
-    hak -= 1;
-    if (tahmin === cevap) {
-      console.log(`Tebrikler bildin. zihin okuyucu musun.🥳`);
-      break;
-    } else {
-      if (tahmin < cevap) {
-        console.log("ARTTIR ⬆");
-      } else {
-        console.log("AZALT ⬇");
-      }
-    }
-  } while (hak > 0);
+//   do {
+//     const tahmin = Number(prompt("Lütfen 0-100 arasinda bir sayi gir:"));
+//     hak -= 1;
+//     if (tahmin === cevap) {
+//       console.log(`Tebrikler bildin. zihin okuyucu musun.🥳`);
+//       break;
+//     } else {
+//       if (tahmin < cevap) {
+//         console.log("ARTTIR ⬆");
+//       } else {
+//         console.log("AZALT ⬇");
+//       }
+//     }
+//   } while (hak > 0);
 
-  if (tahmin === cevap && hak === 0) {
-    console.log("Üzgünüm kaybettin 😢");
-  }
+//   if (tahmin === cevap && hak === 0) {
+//     console.log("Üzgünüm kaybettin 😢");
+//   }
 
-  tekrarOyna = prompt("Tekrar oynamak ister misin E/H?");
-} while (tekrarOyna == "E");
+//   tekrarOyna = prompt("Tekrar oynamak ister misin E/H?");
+// } while (tekrarOyna == "E");
 
-console.log("Bulmadan birakip gidecek misin?🔙");
+// console.log("Bulmadan birakip gidecek misin?🔙");
 
 // * ============================================
 // *            Tahmin oyunu .yol
@@ -115,3 +115,23 @@ console.log("Bulmadan birakip gidecek misin?🔙");
 //             break
 //         }
 //     }
+
+
+
+//? QUESTION GUESS GAME WITH CONDITIONALS
+
+console.log("HAYDİ BAŞLAYALIM");
+let sayı= Math.trunc(Math.random()*100)
+let tahmin= +prompt("enter a number")
+
+
+if (tahmin<0 || tahmin>100 || isNaN(tahmin)) {
+  console.log("Tahmininiz gecerli aralıkta değil");
+}
+else if (tahmin===sayı){
+  console.log("Doğru cevabı buldunuz");
+
+}else{
+  console.log("Uzgunum bulamadınız");
+}
+console.log(`İstenilen sayı ${sayı} idi sizin tahmininiz ${tahmin}`);
