@@ -258,16 +258,17 @@
 // }
 // console.log(`there are ${count} number`);
 // console.log("there are", count, "var");
+
 // ? Çarpım tablosu oluşturma
 
 // for (let i = 1; i<=10; i ++ ) {
-//     console.log(`${i}`, "lar");
+//     console.log(`*********${i}lar*********`);
     
 //     for (let j = 1; j<=10; j ++) {
 //         console.log(`${i}x${j}=${i*j}`);
         
 //     }
-   // console.log("====");
+//    // console.log("====");
     
 // }
 
@@ -408,3 +409,29 @@
 //     return result
 // }
 // console.log(artıkYıl(yıl))
+
+//? Solvıng season
+
+let day= +prompt("Enter a day betweenn 1-31")
+let month= +prompt("Enter a month betweenn 1-12")
+
+if ((month<1 || month>12) || (day<1 || day>31) || (month==2 && day>29)||(day===isNaN || month=== isNaN)) 
+{
+    console.log('Invalid month or day. Please enter valid values.')}
+    
+
+else{
+
+    if (month==2 && day>=21  || month>=3 && month<=5) {
+    console.log(`The season for ${month}/${day} is Sıprıng`);
+}
+    else if (month>=6 && month<=9 || month==9 && day>=21) {
+    console.log(`The season for ${month}/${day} is Summer`);
+
+}
+    else if (month==9 && day>=22 || month==12 && day>=20 || month>=9 && month<=12) {
+    console.log(`The season for ${month}/${day} is Fall`);
+}   else {
+    console.log(`The season for ${month}/${day} is Winter`);
+}
+}

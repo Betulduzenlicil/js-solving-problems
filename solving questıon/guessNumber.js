@@ -120,18 +120,18 @@ let tekrarOyna;
 
 //? QUESTION GUESS GAME WITH CONDITIONALS
 
-console.log("HAYDİ BAŞLAYALIM");
-let sayı= Math.trunc(Math.random()*100)
-let tahmin= +prompt("enter a number")
+// console.log("HAYDİ BAŞLAYALIM");
+// let sayı= Math.trunc(Math.random()*100)
+// let tahmin= +prompt("enter a number")
 
 
-if (tahmin<0 || tahmin>100 || isNaN(tahmin)) {
-  console.log("Tahmininiz gecerli aralıkta değil");
-}
-else if (tahmin===sayı){
-  console.log("Doğru cevabı buldunuz");
+// if (tahmin<0 || tahmin>100 || isNaN(tahmin)) {
+//   console.log("Tahmininiz gecerli aralıkta değil");
+// }
+// else if (tahmin===sayı){
+//   console.log("Doğru cevabı buldunuz");
 
-}else{
-  console.log("Uzgunum bulamadınız");
-}
-console.log(`İstenilen sayı ${sayı} idi sizin tahmininiz ${tahmin}`);
+// }else{
+//   console.log("Uzgunum bulamadınız");
+// }
+// console.log(`İstenilen sayı ${sayı} idi sizin tahmininiz ${tahmin}`);
